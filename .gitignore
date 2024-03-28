@@ -1,0 +1,28 @@
+# Archivos y directorios generados por sistemas operativos y entornos de desarrollo
+.DS_Store               # Archivo creado por macOS para almacenar metadatos de directorios
+.idea/                  # Directorio generado por JetBrains IntelliJ IDEA
+*.pyc                   # Archivos de bytecode de Python
+__pycache__/            # Directorio que contiene archivos de caché de Python
+
+# Archivos y directorios generados por el entorno de desarrollo de Python
+venv/                   # Directorio que contiene un entorno virtual de Python
+*.log                   # Archivos de registro
+*.tmp                   # Archivos temporales
+temp/                   # Directorio de archivos temporales
+
+# Archivos binarios y compilados
+*.exe                   # Ejecutables de Windows
+*.dll                   # Bibliotecas compartidas de Windows
+*.so                    # Bibliotecas compartidas de Linux/Unix
+*.dylib                 # Bibliotecas compartidas de macOS
+
+# Archivos de configuración y variables de entorno sensibles
+.env                    # Archivo de configuración local
+.env.*                  # Archivos de configuración locales con extensiones específicas
+
+# Archivos de datos sensibles
+*.json                  # Archivos JSON que podrían contener datos sensibles
+*.xlsx                  # Archivos Excel que podrían contener datos sensibles
+
+# Dependencias y módulos de terceros
+node_modules/           # Directorio que contiene las dependencias de Node.js
