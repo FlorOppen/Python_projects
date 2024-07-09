@@ -6,7 +6,7 @@ from joblib import load
 from sklearn.preprocessing import StandardScaler
 
 def inference():
-    # Cargar los datos de prueba
+    # Load the test data
     testing = "./test.csv"
     data_test = pd.read_csv(testing)
         
@@ -17,11 +17,11 @@ def inference():
     print(X_test.shape)
     print(y_test.shape)
     
-    # Cargar el escalador y normalizar los datos de prueba
+    # Load the scaler and normalize the test data
     scaler = load('scaler.joblib')
     X_test = scaler.transform(X_test)
         
-    # Cargar el modelo y realizar predicciones
+    # Load the model and make predictions
     clf_nn = load('Inference_NN.joblib')
     print("NN score and classification:")
     print(clf_nn.score(X_test, y_test))
