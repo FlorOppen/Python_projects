@@ -5,7 +5,7 @@ from sklearn.preprocessing import StandardScaler
 
 app = Flask(__name__)
 
-# Cargar el modelo previamente entrenado y el escalador
+# Load model and scaler
 model_nn = load("Inference_NN.joblib"
 scaler = load("scaler.joblib")
 
@@ -13,8 +13,6 @@ scaler = load("scaler.joblib")
 def predict():
     data = request.get_json(force=True)
     df = pd.DataFrame(data)
-    
-    # Escalar los datos usando StandardScaler
     df_scaled = scaler.transform(df)
     
     prediction_nn = model_nn.predict(df_scaled)
