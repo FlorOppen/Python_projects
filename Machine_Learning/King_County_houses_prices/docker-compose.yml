@@ -1,0 +1,32 @@
+services:
+  mysql:
+    image: mysql:latest
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: sql_cont!
+      MYSQL_DATABASE: housing_data
+    ports:
+      - "3306:3306"
+    networks:
+      - king_county_network
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  flask:
+    build: .
+    container_name: king_county_model_app
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
+    depends_on:
+      - mysql
+    networks:
+      - king_county_network
+
+networks:
+  king_county_network:
+    driver: bridge
+
+volumes:
+  mysql_data:
