@@ -37,36 +37,6 @@ The model is built using various machine learning techniques to predict wine qua
 3. **Model Training**: Training the model using the training dataset.
 4. **Model Evaluation**: Evaluating the model using appropriate metrics.
 
-## How to Run
-
-1. **Clone the repository**:
-    ```sh
-    git clone <repository_url>
-    cd <repository_name>
-    ```
-
-2. **Install the dependencies**:
-    ```sh
-    pip install -r requirements.txt
-    ```
-
-3. **Download the dataset**:
-    ```sh
-    python download_dataset.py
-    ```
-
-4. **Train the model**:
-    ```sh
-    python train.py
-    ```
-
-5. **Run the Flask application**:
-    ```sh
-    python app.py
-    ```
-
-6. **Access the application**: The Flask application will be running on `http://localhost:5000`.
-
 ## Libraries Used
 
 - Flask

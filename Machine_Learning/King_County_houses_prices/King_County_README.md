@@ -39,28 +39,6 @@ The project includes the following files:
 - **docker-compose.yml**: Docker Compose configuration to set up the Flask app and MySQL database.
 - **requirements.txt**: List of dependencies required to run the project.
 
-## How to Run
-
-1. **Clone the repository**:
-    ```sh
-    git clone <repository_url>
-    cd <repository_name>
-    ```
-
-2. **Set up the environment variables**: Create a `.env` file with the following variables:
-    ```env
-    MYSQL_USER=<your_mysql_user>
-    MYSQL_PASSWORD=<your_mysql_password>
-    MYSQL_DB=<your_database_name>
-    ```
-
-3. **Build and run the containers**:
-    ```sh
-    docker-compose up --build
-    ```
-
-4. **Access the application**: The Flask application will be running on `http://localhost:5000`.
-
 ## Libraries Used
 
 - Flask

@@ -37,24 +37,6 @@ The CNN model includes:
 4. **Flattening**: Flattening the feature maps before feeding into dense layers.
 5. **Dense Layers**: Dense layers with dropout to improve generalization.
 
-## How to Run
-
-1. **Clone the repository**:
-    ```sh
-    git clone <repository_url>
-    cd <repository_name>
-    ```
-
-2. **Install the dependencies**:
-    ```sh
-    pip install -r requirements.txt
-    ```
-
-3. **Run the Jupyter Notebook**:
-    ```sh
-    jupyter notebook Labeled_Faces_in_the_Wild_CNN.ipynb
-    ```
-
 ## Libraries Used
 
 - TensorFlow

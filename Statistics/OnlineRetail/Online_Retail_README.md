@@ -44,31 +44,6 @@ The initial data exploration and cleaning steps include:
 
 The primary goal of this analysis is to evaluate the effectiveness of a discount strategy on product sales. The analysis includes statistical techniques to determine the impact of discounts on sales performance.
 
-## How to Run
-
-1. **Clone the repository**:
-    ```sh
-    git clone <repository_url>
-    cd <repository_name>
-    ```
-
-2. **Install the dependencies**:
-    ```sh
-    pip install -r requirements.txt
-    ```
-
-3. **Run the Jupyter Notebook**:
-    ```sh
-    jupyter notebook Online_Retail.ipynb
-    ```
-
-## Libraries Used
-
-- pandas
-- numpy
-- matplotlib
-- seaborn
-- scipy
 
 ## Conclusion
 
